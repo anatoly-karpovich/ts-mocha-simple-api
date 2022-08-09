@@ -1,6 +1,6 @@
 import PostsApi from "../pages/postsApi";
 import { AxiosResponse } from 'axios'
-import { generateNewPost } from '../data-generation/posts-data-generator'
+import { generateNewPost } from '../fixtures/posts-data-generator'
 
 let response: AxiosResponse;
 
