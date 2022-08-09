@@ -2,23 +2,25 @@ import { AxiosResponse } from "axios";
 import { RequestOptions } from "../types/requestOptions";
 import request from "../RequestApi/requestApi";
 import type { Post } from "../types/postsTypes";
+import envConfig from "../config/environment.conf";
 
 
 class PostsApi {
   async getListOfPosts(id?: number): Promise<AxiosResponse> {
     const options: RequestOptions = {
       method: "get",
-      url: "https://jsonplaceholder.typicode.com/posts/",
+      baseURL: envConfig.baseUrl,
+      url: id ? envConfig.endpoints.postById(id) : envConfig.endpoints.allPosts,
       headers: {}
     };
-    if(id) options.url+= id
     return request.sendRequest(options);
   }
 
   async createPost(params: Post) {
     const options: RequestOptions = {
         method: 'post',
-        url: 'https://jsonplaceholder.typicode.com/posts/',
+        baseURL: envConfig.baseUrl,
+        url: envConfig.endpoints.allPosts,
         headers: {},
         data: params
     }
