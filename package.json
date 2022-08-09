@@ -16,10 +16,13 @@
     },
     "scripts": {
         "wdio": "npx tsc && wdio run wdio.conf.ts",
-        "allure": "allure generate ./allure-results --clean && allure open"
+        "allure": "allure generate ./allure-results --clean && allure open",
+        "mocha": "npx tsc && mocha --config ./dist/wdio.conf.js"
     },
     "dependencies": {
         "allure-commandline": "^2.18.1",
-        "axios": "^0.27.2"
+        "axios": "^0.27.2",
+        "lodash": "^4.17.21",
+        "mocha": "^10.0.0"
     }
 }
