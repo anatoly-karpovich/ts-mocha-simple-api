@@ -9,7 +9,7 @@ class PostsApi {
   async getListOfPosts(id?: number): Promise<AxiosResponse> {
     const options: RequestOptions = {
       method: "get",
-      baseURL: envConfig.baseUrl,
+      baseURL: process.env.baseURL ? process.env.baseURL : envConfig.baseUrl,
       url: id ? envConfig.endpoints.postById(id) : envConfig.endpoints.allPosts,
       headers: {}
     };
