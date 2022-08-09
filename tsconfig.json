@@ -1,0 +1,40 @@
+// {
+//     "compilerOptions": {
+//         "allowSyntheticDefaultImports": true,
+//         "moduleResolution": "node",
+//         "types": [
+//             "node",
+//             "webdriverio/async",
+//             "@wdio/mocha-framework",
+//             "expect-webdriverio"
+//         ],
+//         "target": "es2019"
+//     }
+// }
+
+
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "sourceMap": false,
+        "target": "es2019",
+        "module": "commonjs",
+        "removeComments": true,
+        "noImplicitAny": true,
+        "strictPropertyInitialization": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/mocha-framework",
+            "expect-webdriverio",
+        ],
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./wdio.conf.ts"
+    ]
+}

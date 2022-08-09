@@ -1,0 +1,154 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660077413074' stop='1660077414928'>
+    <name>Api tests</name>
+    <title>Api tests</title>
+    <test-cases>
+        <test-case start='1660077413075' status='passed' stop='1660077413262'>
+            <name>Get posts</name>
+            <title>Get posts</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660077413262' status='passed' stop='1660077413366'>
+            <name>Get post for id = 1</name>
+            <title>Get post for id = 1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660077413367' status='passed' stop='1660077413710'>
+            <name>Should create new post with valid data</name>
+            <title>Should create new post with valid data</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1660077413710' status='failed' stop='1660077414129'>
+            <name>Should create new post with empty title</name>
+            <title>Should create new post with empty title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1660077414064' status='passed' stop='1660077414128'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='6ad14f2b-aa09-42bd-9170-723239ad32fe-attachment.png' type='image/png' size='5153'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(received).toBe(expected) // Object.is equality
+                
+                Expected: 500
+                Received: 201</message>
+                <stack-trace>Error: expect(received).toBe(expected) // Object.is equality
+                
+                Expected: 500
+                Received: 201
+                    at Context.&lt;anonymous> (C:\Work\TS\WDIO_TS_MOCHA\src\ui\specs\api\tests\posts.test.ts:30:33)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660077414129' status='failed' stop='1660077414540'>
+            <name>Should create new post with empty body</name>
+            <title>Should create new post with empty body</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1660077414471' status='passed' stop='1660077414539'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='2ed1c29b-bcd8-4f82-8612-b7df06ea593f-attachment.png' type='image/png' size='5153'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(received).toBe(expected) // Object.is equality
+                
+                Expected: 500
+                Received: 201</message>
+                <stack-trace>Error: expect(received).toBe(expected) // Object.is equality
+                
+                Expected: 500
+                Received: 201
+                    at Context.&lt;anonymous> (C:\Work\TS\WDIO_TS_MOCHA\src\ui\specs\api\tests\posts.test.ts:36:33)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660077414540' status='failed' stop='1660077414927'>
+            <name>Should create new post with empty userId</name>
+            <title>Should create new post with empty userId</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1660077414870' status='passed' stop='1660077414927'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3da22f22-b71b-4275-a206-91571c1d52c4-attachment.png' type='image/png' size='5153'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>expect(received).toBe(expected) // Object.is equality
+                
+                Expected: 500
+                Received: 201</message>
+                <stack-trace>Error: expect(received).toBe(expected) // Object.is equality
+                
+                Expected: 500
+                Received: 201
+                    at Context.&lt;anonymous> (C:\Work\TS\WDIO_TS_MOCHA\src\ui\specs\api\tests\posts.test.ts:42:33)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

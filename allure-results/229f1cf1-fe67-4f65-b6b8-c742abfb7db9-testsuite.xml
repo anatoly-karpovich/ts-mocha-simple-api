@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660069827541' stop='1660069827977'>
+    <name>Api tests</name>
+    <title>Api tests</title>
+    <test-cases>
+        <test-case start='1660069827542' status='broken' stop='1660069827775'>
+            <name>Get posts</name>
+            <title>Get posts</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1660069827695' status='passed' stop='1660069827774'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9493f736-1c52-4364-b1c6-68ec8ee7e448-attachment.png' type='image/png' size='5153'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'status')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'status')
+                    at Context.&lt;anonymous> (C:\Work\TS\WDIO_TS_MOCHA\src\ui\specs\api\tests\posts.test.ts:9:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660069827776' status='broken' stop='1660069827975'>
+            <name>Get post for id = 1</name>
+            <title>Get post for id = 1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-103.0.5060.134'/>
+            </parameters>
+            <steps>
+                <step start='1660069827907' status='passed' stop='1660069827975'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='b6c17b84-29d4-49d1-9875-53a626697feb-attachment.png' type='image/png' size='5153'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'status')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'status')
+                    at Context.&lt;anonymous> (C:\Work\TS\WDIO_TS_MOCHA\src\ui\specs\api\tests\posts.test.ts:14:25)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
