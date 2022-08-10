@@ -22,7 +22,7 @@ describe('Api tests', () => {
         response = await PostsApi.createPost(params)
         expect(response.status).toBe(201)
         actual['id'] = 101;
-        expect(response.data).toMatchObject(params)
+        expect(response.data).toMatchObject(actual)
     });
     
     it('Should create new post with empty title', async function() {

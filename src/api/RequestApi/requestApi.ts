@@ -22,6 +22,7 @@ class RequestApi {
     }
 }
 
+export default new RequestApi()
 
 
 
@@ -53,4 +54,3 @@ class RequestApi {
         // )
 */
 
-export default new RequestApi()

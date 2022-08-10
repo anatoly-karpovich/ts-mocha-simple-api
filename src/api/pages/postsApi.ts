@@ -16,13 +16,13 @@ class PostsApi {
     return request.sendRequest(options);
   }
 
-  async createPost(params: Post) {
+  async createPost(post: Post) {
     const options: RequestOptions = {
         method: 'post',
         baseURL: envConfig.baseUrl,
         url: envConfig.endpoints.allPosts,
         headers: {},
-        data: params
+        data: post
     }
     return request.sendRequest(options);
   }
