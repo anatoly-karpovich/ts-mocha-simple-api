@@ -1,12 +1,12 @@
 import { AxiosResponse } from "axios";
 import { RequestOptions } from "../types/requestOptions";
 import request from "../RequestApi/requestApi";
-import type { Post } from "../types/postsTypes";
+import type { Post, Id } from "../types/postsTypes";
 import envConfig from "../config/environment.conf";
 
 
 class PostsApi {
-  async getListOfPosts(id?: number): Promise<AxiosResponse> {
+  async getListOfPosts(id?: number): Promise<AxiosResponse<Array<Post & Id>>> {
     const options: RequestOptions = {
       method: "get",
       baseURL: process.env.baseURL ? process.env.baseURL : envConfig.baseUrl,

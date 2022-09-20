@@ -39,8 +39,6 @@ export default new RequestApi()
 
 
 
-
-
 /*
         // return request(options as AxiosRequestConfig).then(
         //     (res: AxiosResponse) => {return res},

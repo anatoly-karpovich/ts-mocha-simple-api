@@ -1,4 +1,4 @@
-import {Method} from 'axios'
+import { Method } from 'axios'
 import type { AxiosResponseHeaders } from 'axios'
 
 type Primitives = string | number | boolean
